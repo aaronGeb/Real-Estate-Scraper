@@ -24,7 +24,7 @@ The pipeline:
 <li>Supports scheduled scraping and reporting exports</li>
 </ol>
 
-## ✨ Features
+## Features
 
 | Feature                    | Details                                                         |
 | -------------------------- | --------------------------------------------------------------- |
