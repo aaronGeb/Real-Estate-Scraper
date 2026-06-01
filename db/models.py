@@ -114,10 +114,10 @@ class ScrapeLog(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     property_id = Column(
         Integer, ForeignKey("properties.id", ondelete="CASCADE"), nullable=True
-    )  # null = city-level log
+    )
     source = Column(String(20), nullable=False)
     city = Column(String(100), nullable=True)
-    status = Column(String(20), nullable=False)  # success | error | skipped
+    status = Column(String(20), nullable=False)
     records_scraped = Column(Integer, default=0)
     error_message = Column(Text, nullable=True)
     duration_secs = Column(Float, nullable=True)
