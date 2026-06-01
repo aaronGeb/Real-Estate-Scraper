@@ -6,6 +6,11 @@
 ![Playwright](https://img.shields.io/badge/Playwright-Web_Scraping-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+A production-grade data engineering pipeline that continuously collects real estate listings from Zillow and Redfin, tracks historical price changes, stores normalized data in PostgreSQL, and exposes insights through a FastAPI REST API.
+
+Designed to demonstrate practical skills in web scraping, ETL development, database design, API engineering, scheduling, monitoring, and data export workflows.
+
+
 
 
 
@@ -86,8 +91,8 @@ playwright install chromium
 ### 2. Configure environment
 
 ```bash
-cp .env.example .env
-# Edit .env with your PostgreSQL credentials and target cities
+.env
+
 ```
 
 ### 3. Set up PostgreSQL
