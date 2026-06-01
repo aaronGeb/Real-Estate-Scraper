@@ -1,4 +1,4 @@
-"""database"""
+"""database engine"""
 
 from contextlib import contextmanager
 from sqlalchemy import create_engine, text
@@ -12,7 +12,7 @@ engine = create_engine(
     settings.database_url,
     pool_size=5,
     max_overflow=10,
-    pool_pre_ping=True,  # reconnect on stale connections
+    pool_pre_ping=True,
     echo=False,
 )
 
@@ -50,8 +50,6 @@ def get_db() -> Session:
     finally:
         session.close()
 
-
-# FastAPI dependency (used in api/routes)
 def get_db_dependency():
     session = SessionLocal()
     try:
