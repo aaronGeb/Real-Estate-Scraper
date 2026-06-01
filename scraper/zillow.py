@@ -3,11 +3,9 @@ This file contains the scraper for Zillow.
 '''
 import random
 import asyncio
-from sqlite3 import SQLITE_FUNCTION
 import time
 import re
-from tkinter import NO
-from typing import List, Optional
+from typing import Optional
 from playwright.async_api import async_playwright, Page, Browser
 from bs4 import BeautifulSoup
 from loguru import logger
